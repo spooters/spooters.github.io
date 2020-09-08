@@ -8,7 +8,7 @@ Today I started configuring my new MacBook Pro.  In this blog post I will docume
 
 Step one
 
-Installed Homebrew
-Installed LastPass
-Installed vscode
-Installed Spotify 
+- Installed Homebrew
+- Installed LastPass
+- Installed vscode
+- Installed Spotify 
