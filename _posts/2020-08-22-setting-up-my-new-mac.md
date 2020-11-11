@@ -12,3 +12,5 @@ Step one
 - Installed LastPass
 - Installed vscode
 - Installed Spotify 
+- Installed Microsoft Office
+
