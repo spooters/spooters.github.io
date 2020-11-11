@@ -8,9 +8,22 @@ Today I started configuring my new MacBook Pro.  In this blog post I will docume
 
 Step one
 
-- Installed Homebrew
-- Installed LastPass
-- Installed vscode
-- Installed Spotify 
-- Installed Microsoft Office
+The first application I install on a new OS installation is HomeBrew.  Homebrew is the most popular package manager for MacOS. It's a clean and easy way to install the applications you need. Similar to the Windows alternative Chocolately. 
+
+Visit https://brew.sh, copy the install command and run in your macOS Terminal.
+
+- Install Homebrew
+
+Step two
+
+Now that I have Homebrew installed I can easily search and install my required applications.
+
+brew search "application name"
+
+brew install "application name"
+
+- Install LastPass
+- Install vscode
+- Install Spotify 
+- Install Microsoft Office
 
