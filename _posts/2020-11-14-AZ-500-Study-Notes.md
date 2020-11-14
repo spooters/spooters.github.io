@@ -38,4 +38,3 @@ These are known collectiviely as CIA.  Each of these princciples can be applied 
 - Privileged Identity Management
 - Service principles 
 - Managed identityes for Azure Resource
-- 
