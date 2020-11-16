@@ -4,7 +4,9 @@ title:  AZ-500 Study Notes
 categories: [Azure]
 ---
 
-Introduction
+My Study Notes for the AZ-500 Microsoft Azure Security Technologies exam.
+
+## Introduction
 
 Today's security posture is to assume breach and use the Zero Trust model.
 
