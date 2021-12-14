@@ -18,3 +18,4 @@ Microsoft Defender for Endpoint delivers preventative protection, post-breach de
 Microsoft 365 Defender is part of Microsoft’s Extended Detection and Response (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
 - Microsoft Cloud App Security
 Microsoft Cloud App Security is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+- [Azure Defender Mind Map capturing all its protection capabilites](https://swiftsolves.substack.com/p/mind-map-azure-defender-threat-protection) 
