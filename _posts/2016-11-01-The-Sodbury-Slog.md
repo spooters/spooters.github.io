@@ -13,3 +13,15 @@ As you can see. You get muddy!
 Marcus 1:38:29.2 (349 / 1096)
 Dave 1:46:03.9 (447 / 1096)
 Tony 1:52:11.0 (513 / 1096)
+
+<div class="post-categories">
+  {% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
