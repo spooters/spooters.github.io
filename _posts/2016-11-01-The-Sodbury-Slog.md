@@ -8,8 +8,8 @@ Well the Sodbury Slog lived up to expectation. Mud and a really nice course. Dav
 
 As you can see. You get muddy!
 
-### Race times were.
+### Race times.
 
-#### Marcus 1:38:29.2 (349 / 1096)
+Marcus 1:38:29.2 (349 / 1096)
 Dave 1:46:03.9 (447 / 1096)
 Tony 1:52:11.0 (513 / 1096)
