@@ -1,5 +1,5 @@
 ---
-title: Summary
+title: summary
 layout: page
 permalink: /summary/
 ---
