@@ -1,7 +1,7 @@
 ---
 title: Summary
 layout: page
-permanlink: /summary/
+permalink: /summary/
 ---
 
 <h1>{{ page.title }}</h1>
