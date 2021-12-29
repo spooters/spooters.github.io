@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  YouTube Security Resources
-categories: [InfoSec]
+categories: [Security]
 ---
 
 A collection of YouTube channels for Azure and Infosec.
