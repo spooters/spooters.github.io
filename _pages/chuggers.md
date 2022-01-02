@@ -2,5 +2,5 @@
 title: Running
 layout: category
 permalink: /chuggers/
-category_name: running
+category_name: Running
 ---
