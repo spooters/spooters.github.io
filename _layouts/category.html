@@ -26,9 +26,11 @@ layout: default
                 <div class="card">
                         <h1><strong>{{post.title}}</strong></h1>
                         </a>
-                        <p>{{ post.excerpt | strip_html | truncatewords: 60 }}</p>
+                        <p>{{ post.excerpt | strip_html | truncatewords: 60 }}
                 
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</a> 
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</a> 
+                            
+                </p>
                 
                 </div>
                 {% endfor %}
