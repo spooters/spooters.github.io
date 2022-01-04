@@ -25,7 +25,7 @@ layout: default
                         <h1><strong>{{post.title}}</strong></h1>
                         </a>
                         <p>{{ post.excerpt | strip_html | truncatewords: 60 }}</p>
-                        <p> href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</p>     
+                        <a> href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</a>     
                 </div>
                 {% endfor %}
                 {% else %}
