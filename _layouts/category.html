@@ -22,7 +22,7 @@ layout: default
                 <article class="post">
                         <h1><strong>{{post.title}}</strong></h1>
                         <div>
-                        <p>{{ page.date | date_to_string }}</p>
+                        {{ page.date | date_to_long_string }}
                         </div>
                         <p>{{ post.excerpt | strip_html | truncatewords: 60 }}
                 <div class="entry">
