@@ -21,7 +21,7 @@ layout: default
                 {% for post in site.categories[page.category_name] %}
                 <article class="post">
                         <h1><strong>{{post.title}}</strong></h1>
-                        <p>{{post.date | date_to_string</p>
+                        <div>{{post.date | date_to_string</div>
                         <p>{{ post.excerpt | strip_html | truncatewords: 60 }}
                 <div class="entry">
                 <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</a> 
