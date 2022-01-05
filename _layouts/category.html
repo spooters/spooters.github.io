@@ -19,13 +19,22 @@ layout: default
     <div class="container">
                 {% if site.categories[page.category_name] %}
                 {% for post in site.categories[page.category_name] %}
+
                 <article class="post">
-                        <h1><strong>{{post.title}}</strong></h1>
-                        <div>{{post.date | date_to_string</div>
-                        <p>{{ post.excerpt | strip_html | truncatewords: 60 }}
-                <div class="entry">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">READ MORE</a> 
-                </article>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                      <h1>{{ post.title }}</h1>
+              
+                      <div>
+                        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+                      </div>
+                    </a>
+                    <div class="entry">
+                      {{ post.excerpt }}
+                    </div>
+              
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+                  </article>
+
                 </div>          
                 </p>
                 
