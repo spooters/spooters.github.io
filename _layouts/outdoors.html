@@ -1,49 +1,28 @@
 ---
 layout: default
 ---
-
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
-
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+<div class="categories">
+    <h1 class="h1 category-title">
+      Topic:&nbsp;{{ page.category-name }}/
+    </h1>
+    <div class="posts">
+      {% for post in site.categories[page.category-name] %}
+        <div class="post py3">
+          <p class="post-meta">
+        {% if site.date_format %}
+            {{ post.date | date: site.date_format }}
+        {% else %}
+            {{ post.date | date: "%b %-d, %Y" }}
+        {% endif %}
+        </p>
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            <h3 class="h1 post-title">
+              {{ post.title }}
+            </h3>
+          </a>
+          <span class="post-summary">
+              {{ post.excerpt }}
+          </span>
         </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
+    </div>
 </div>
